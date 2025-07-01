@@ -1,0 +1,35 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recrutamento RH</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bem-vindo ao Sistema de Recrutamento</h1>
+    </header>
+
+    <main>
+      <form id="formulario-cadastro">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required="" />
+
+        <label for="documento">Documento (PDF):</label>
+        <input
+          type="file"
+          id="documento"
+          name="documento"
+          accept=".pdf"
+          required=""
+        />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="mensagem"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
