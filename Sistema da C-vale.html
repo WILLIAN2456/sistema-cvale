@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recrutamento RH</title>
+    <title>Recrutamento RH - Cadastro de Candidatos</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,9 +12,9 @@
     </header>
 
     <main>
-      <form id="formulario-cadastro">
+      <form id="formulario-cadastro" enctype="multipart/form-data">
         <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required="" />
+        <input type="text" id="nome" name="nome" required />
 
         <label for="documento">Documento (PDF):</label>
         <input
@@ -21,13 +22,14 @@
           id="documento"
           name="documento"
           accept=".pdf"
-          required=""
+          required
         />
+        <small>Somente arquivos PDF são aceitos.</small>
 
         <button type="submit">Enviar</button>
       </form>
 
-      <div id="mensagem"></div>
+      <div id="mensagem" aria-live="polite"></div>
     </main>
 
     <script src="script.js"></script>
